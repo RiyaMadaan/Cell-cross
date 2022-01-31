@@ -2,7 +2,15 @@
     list-style-type: square;
     color: white;
 }
+
+.footerlist:hover{
+    color: white;
+}
 .footerlinks{
     text-decoration: none;
+    color: white;
+}
+
+.footerlinks:hover{
     color: white;
 }
