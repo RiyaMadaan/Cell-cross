@@ -21,7 +21,7 @@
     <img src="./images/Screenshot (85).png" width="100%" alt="">
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark p-3" style="background-color: #84876c;">
+  <nav class="navbar navbar-expand-lg navbar-dark p-3 " style="background-color: #84876c;">
     <div class="container-fluid">
       <a class="navbar-brand" style="color: #252e6b;" href="./index.html">CELL CROSS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -52,20 +52,11 @@
           <li class="nav-item">
             <a class="nav-link" href="./careers.html">Careers</a>
           </li>
-          <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Products
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> -->
+          
           <li class="nav-item">
             <a class="nav-link" href="./contact.html">Contact Us</a>
           </li>
+          <button class="btn btn-primary" onclick="displayEnquiry()" id="enqnav">Enquire</button>
         </ul>
         <!-- <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -76,38 +67,245 @@
   </nav>
 
   <div class="container my-3">
-    <div class="row">
-      <div class="col-lg-4 p-3">
-        <img src="./images/home11.jpg" width="100%" alt="">
-      </div>
-      <div class="col-lg-5 p-sm-3">
-        <h2>XYZ TABLETS</h2>
-        <p>Each Tablet contains Calcium 250 mg </p>
-        <p>Packing Size 10x1x10 Blister pack</p>
-        <p>Packing Size 10x1x10 Blister pack</p>
-        <p>Packing Size 10x1x10 Blister pack</p>
-
-      </div>
-
+    <h2 style="font-family: cursive; color: #252e6b;">Main Pharma Division(General Health)
+    </h2>
     </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 p-3">
-        <img src="./images/home11.jpg" width="100%" alt="">
-      </div>
-      <div class="col-lg-5 p-sm-3">
-        <h2>XYZ TABLETS</h2>
-        <p>Each Tablet contains Calcium 250 mg </p>
-        <p>Packing Size 10x1x10 Blister pack</p>
-        <p>Packing Size 10x1x10 Blister pack</p>
-        <p>Packing Size 10x1x10 Blister pack</p>
 
-      </div>
+  <div class="container-fluid p-3 ">
+    <div class="container my-3 " style="position: relative;">
+     
+      <div class="row enquiry my-3 mx-3 p-3 " id="enquirydiv" style=" width: 95%; display: none; z-index: 0; position: absolute; background-color: white;">
+        <div class="col-lg-12 p-3 my-3">
+          <form action="" class="p-3 mx-3 " style="width: 97%; background-color: #252e6b; color: white;">
+            <h2 class="mx-4 text-center">Do Enquiry</h2>
 
+            <div class="mb-3 mx-5">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3 mx-5">
+              <label for="exampleFormControlTextarea1" class="form-label">Name</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="mb-3 mx-5">
+              <label for="exampleFormControlTextarea1" class="form-label">Phone No.</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="input-group mb-3 mx-5" style="width:90%">
+              <label class="input-group-text" for="inputGroupSelect01">Choose Division</label>
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">Main Pharma</option>
+              </select>
+            </div>
+            <div class="input-group mb-3 mx-5" style="width: 90%;">
+              <label class="input-group-text" for="inputGroupSelect01">Choose medicine</label>
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose medicine</option>
+                <option value="1">FERMINI 20 TABLET</option>
+                <option value="2">CORFINE D3 TABLET </option>
+                <option value="3">CORFINE PLUS TABLET</option>
+                <option value="4">CORFINE D3 60K Capsules</option>
+                <option value="5">UTICELL 100 mg SR TABLET</option>
+                <option value="6">DEFCROSS 6 mg</option>
+                <option value="7">GASCROSS SUSPENSION (Mint Flavour)</option>
+                <option value="8">GASCROSS - DSR CAPSULES</option>
+                <option value="9">NITPURE 100 mg SR TABLET</option>
+                <option value="10">CUFFCROSS - A SYRUP</option>
+                <option value="11">CUFFCROSS - D SYRUP</option>
+
+              </select>
+            </div>
+            <div class="col-auto mx-5">
+              <button type="submit" class="btn mb-3" style="background-color: #84876c; color: #252e6b;">Enquire</button>
+            </div>
+          
+            
+          </form>
+        </div>
+        </div>
+        
+
+        <div class="row p-3" id="carddiv">
+            <div class="col-lg-4 p-3 col-md-12 ">
+                <div class="card" style="width: 100%;">
+                    <img src="./images/home3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">FERMINI 20 TABLET </h5>
+                        <p class="card-text">		Ferrous Amino Acid Chelate + Folic acid + vit B6 + Zinc Picolinate</p>
+                        <!-- <a href="./product1.html" target="_blank" class="btn" style="background-color: #252e6b; color: white;">See -->
+                            <!-- Full List</a> -->
+                            <p class="card-text">		Packing type = 10x10 Blister Tablets</p>
+                            <!-- <a href="./index.html" class="float-end" >Enquire</a> -->
+                    
+                    </div>
+                </div>
+            </div>
+           <div class="col-lg-4 p-3 col-md-6">
+                <div class="card" style="width: 100%;">
+                    <img src="./images/home12.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CORFINE PLUS TABLET</h5>
+                        <p class="card-text">Coral Calcium+ Methylcobalamin+ DHA + L-methyl Folate + Pyridoxal 5 Phosphate</p>
+                        <p class="card-text">Packing type = 10x1x10 Alu ALu Tablets</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  p-3 col-md-12 ">
+              <div class="card" style="width: 100%;">
+                  <img src="./images/home3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">CORFINE D3 60K Capsules* </h5>
+                      <p class="card-text">		Each Cap Contains Cholecalciferol 60,000 IU</p>
+                      <!-- <a href="./product1.html" target="_blank" class="btn" style="background-color: #252e6b; color: white;">See -->
+                          <!-- Full List</a> -->
+                          <p class="card-text">		Packing type = 10x1x4 soft Gel Caps</p>
+                  </div>
+              </div>
+          </div>
+            
+        </div>
+
+       
     </div>
-  </div>
+</div>
 
+<div class="container-fluid p-3 ">
+  <div class="container my-3">
+      <div class="row p-3 ">
+         
+
+
+
+
+
+          <div class="col-lg-4 p-3 col-md-12">
+              <div class="card" style="width: 100%;">
+                  <img src="./images/home13.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">UTICELL 100 mg SR TABLET</h5>
+                      <p class="card-text">		Each Tab Contains Nitrofurantoin 100 mg SR</p>
+                      <p class="card-text">Packing type = 10x10 BlisterTablets</p>
+
+                      <!-- <a href="./product2.html" target="_blank" class="btn" style="background-color: #252e6b; color: white;">See
+                          Full List</a> -->
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4  p-3 col-md-12 ">
+            <div class="card" style="width: 100%;">
+                <img src="./images/home3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">GASCROSS SUSPENSION (Mint Flavour)</h5>
+                    <p class="card-text">		Magaldrate + Simethicone     </p>
+                    <!-- <a href="./product1.html" target="_blank" class="btn" style="background-color: #252e6b; color: white;">See -->
+                        <!-- Full List</a> -->
+                        <p class="card-text">	Packing type = 170 ML Bottle</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 p-3 col-md-6">
+          <div class="card" style="width: 100%;">
+              <img src="./images/home12.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">NITPURE 100 mg SR TABLET</h5>
+                  <p class="card-text">		Each Tab Contains Nitrofurantoin 100 mg SR</p>
+                  <p class="card-text">Packing type = 10x10 BlisterTablets</p>
+
+                  <!-- <a href="./product3.html" target="_blank" class="btn" style="background-color: #252e6b; color: white;">See
+                      Full List</a> -->
+              </div>
+          </div>
+      </div>
+         
+      </div>
+
+  </div>
+</div>
+
+<div class="container-fluid p-3 ">
+  <div class="container my-3">
+      <div class="row p-3 ">
+        <div class="col-lg-4 p-3 col-md-6">
+          <div class="card" style="width: 100%;">
+              <img src="./images/home12.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">DEFCROSS 6 mg*</h5>
+                  <p class="card-text">Each Tab Contains Deflazacort 6 mg </p>
+                  <p class="card-text">Packing type = 10x10 Alu Alu Tablets</p>
+
+              </div>
+          </div>
+      </div>
+
+
+
+          <div class="col-lg-4 p-3 col-md-12">
+              <div class="card" style="width: 100%;">
+                  <img src="./images/home13.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">GASCROSS - DSR CAPSULES</h5>
+                      <p class="card-text">Rabeprazole EC + Domperidone     </p>
+                      <p class="card-text">Packing type = 10x10 Capsules</p>
+
+                  </div>
+              </div>
+          </div>
+         
+ <div class="col-lg-4 p-3 col-md-12">
+                <div class="card" style="width: 100%;">
+                    <img src="./images/home13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CORFINE D3 TABLET</h5>
+                        <p class="card-text">Coral Calcium + Vit D3 tab</p>
+                        <p class="card-text">Packing type = 10x1x10 Blister Tablets</p>
+
+                    </div>
+                </div>
+            </div>
+            
+
+      </div>
+
+  </div>
+</div>
+
+
+<div class="container-fluid p-3 ">
+  <div class="container my-3">
+      <div class="row p-3 ">
+          <div class="col-lg-4  p-3 col-md-12 ">
+              <div class="card" style="width: 100%;">
+                  <img src="./images/home3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">CUFFCROSS - A SYRUP</h5>
+                      <p class="card-text">		Contains Turbutaline + Ambroxol + Guiaphenesin</p>
+                      <!-- <a href="./product1.html" target="_blank" class="btn" style="background-color: #252e6b; color: white;">See -->
+                          <!-- Full List</a> -->
+                          <p class="card-text">	Packing type = 100 ml  Syrup</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 p-3 col-md-12">
+              <div class="card" style="width: 100%;">
+                  <img src="./images/home13.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">CUFFCROSS - D SYRUP</h5>
+                      <p class="card-text">Contains Dextromethorphan + CPM + Phenylephrine</p>
+                      <p class="card-text">Packing type = 100 ml  Syrup</p>
+
+                      <!-- <a href="./product2.html" target="_blank" class="btn" style="background-color: #252e6b; color: white;">See
+                          Full List</a> -->
+                  </div>
+              </div>
+          </div>
+         
+      </div>
+
+  </div>
+</div>
 
   <div class="container-fluid  p-2" style="background-color: #252e6b;">
     <marquee width="100%" style="color: white;">Cell Cross is a global pharmaceutical company whose goal is to ensure

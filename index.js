@@ -23,3 +23,17 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function displayEnquiry(){
+  const enq = document.getElementById("enquirydiv");
+  if(enq.style.display === 'none'){
+  enq.style.display = 'block';
+  enq.style.zIndex = 9;
+  }
+  else{
+    enq.style.display = 'none';
+    enq.style.zIndex = 0;
+  
+  }
+}
+
