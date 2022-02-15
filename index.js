@@ -37,3 +37,9 @@ function displayEnquiry(){
   }
 }
 
+function enquiryClose(){
+  const enq = document.getElementById("enquirydiv");
+  enq.style.display = 'none';
+  enq.style.zIndex = 0;
+}
+
