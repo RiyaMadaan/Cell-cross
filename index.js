@@ -117,18 +117,17 @@ window.onload = function () {
 }
 
 function loginFailed(){
-$(document).ready(function(){
-  document.getElementById("show").addEventListener('click',function(event){
-    event.preventDefault()
-  })
-  $("#show").click(function(){
-    $("#incorrectData").show();
+  $(document).ready(function(){
+    document.getElementById("show").addEventListener('click',function(event){
+      event.preventDefault()
+    })
+    $("#show").click(function(){
+      $("#incorrectData").show();
+    });
   });
-});
-}
-function reset(){
-  document.querySelector("form").reset();
-  $("#incorrectData").hide();
-}
-
-
+  }
+  function reset(){
+    document.querySelector("form").reset();
+    $("#incorrectData").hide();
+  }
+  
