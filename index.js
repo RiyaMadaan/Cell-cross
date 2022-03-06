@@ -46,7 +46,7 @@ function enquiryClose() {
 // ---------------------------form validation-----------------------------//
 
 var subjectObject = {
-  "DIVISION PHARMA": {
+  "PHARMA": {
     "FERMINI 20 TABLET": [],
     "CORFINE D3 TABLET ": [],
     "CORFINE PLUS TABLET": [],
@@ -60,7 +60,7 @@ var subjectObject = {
     "CUFFCROSS - D SYRUP": [],
 
   },
-  "DIVISION FEMINA": {
+  "FEMINA": {
     "FERMINI 20 TABLET": [],
     "CORFINE D3 TABLET ": [],
     "CORFINE PLUS TABLET": [],
@@ -74,7 +74,7 @@ var subjectObject = {
     "GESTCROSS  200 CAPSULES*": [],
 
   },
-  "DIVISION VETCROSS": {
+  "VETCROSS": {
     "CEFTIGROW 1 gm INJ (Lyophilized)": [],
     "LACTOLIME GOLD 5 Litre": [],
     "LACTOLIME GOLD 20 Litre": [],
@@ -88,7 +88,7 @@ var subjectObject = {
 
   },
 
-  "DIVISION PETCROSS": {
+  "PETCROSS": {
     "LIMECAL PET": [],
     "WORMCROSS PET ": [],
     "CEPHACELL Tablet 300 mg": [],
@@ -118,14 +118,10 @@ window.onload = function () {
 
 function loginFailed(){
   $(document).ready(function(){
-    document.getElementById("show").addEventListener('click',function(event){
-      event.preventDefault()
-    })
-    $("#show").click(function(){
       $("#incorrectData").show();
     });
-  });
-  }
+}
+  
   function reset(){
     document.querySelector("form").reset();
     $("#incorrectData").hide();
