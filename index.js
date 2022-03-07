@@ -116,14 +116,19 @@ window.onload = function () {
 
 }
 
+const cmntForm = document.forms['loginForm'];
+
+cmntForm.addEventListener('submit', function(event){
+  event.preventDefault();
+  loginFailed();
+  this.textarea.value = ""; 
+});
+
 function loginFailed(){
-  $(document).ready(function(){
       $("#incorrectData").show();
-    });
 }
   
   function reset(){
     document.querySelector("form").reset();
     $("#incorrectData").hide();
   }
-  
