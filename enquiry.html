@@ -56,7 +56,7 @@
           <li class="nav-item">
             <a class="nav-link" href="./careers.html">Careers</a>
           </li>
-          
+
           <li class="nav-item">
             <a class="nav-link" href="./contact.html">Contact Us</a>
           </li>
@@ -75,50 +75,50 @@
             <div class="col-lg-6 p-5">
                 <img src="./images/car1.png" width="100%" alt="">
             </div>
-            
+
             <div class="col-lg-6 p-3 border border-1 my-3 enqform">
                 <h2 class="text-center my-3" style="color: #252e6b;">ENQUIRY FORM</h2>
                 <p class="mx-3">If you have any queries, kindly take a moment to fill up this form. Our representative will contact you shortly</p>
-                <form action="" class="p-3" style="width: 97%;">
+                <form method="POST" action="https://formspree.io/f/mrgjljkz" class="p-3" style="width: 97%;">
                     <div class="mb-3 ">
                       <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" required id="eid" placeholder="name@example.com">
+                      <input type="email" name="Email" class="form-control" required id="eid" placeholder="name@example.com">
                     </div>
                     <div class="mb-3">
                       <label for="exampleFormControlTextarea1" class="form-label">Name</label>
-                      <textarea class="form-control" required id="nameid" rows="1"></textarea>
+                      <textarea class="form-control" name="Name" required id="nameid" rows="1"></textarea>
                     </div>
                     <div class="mb-3">
                       <label for="exampleFormControlTextarea1" class="form-label">Phone No.</label>
-                      <input type="number" class="form-control" max="10" required id="pid" placeholder="">
+                      <input type="number" class="form-control" name="Phone" max="10" required id="pid" placeholder="">
                     </div>
                     <div class="input-group mb-3" style="width:100%">
                       <label class="input-group-text" for="inputGroupSelect01">Choose Division</label>
-                      <select class="form-select" id="divselect" required>
+                      <select class="form-select" name="Division" id="divselect" required>
                         <option value="" selected = "selected">Choose Division</option>
                       </select>
                     </div>
                     <div class="input-group mb-3" style="width: 100%;">
                       <label class="input-group-text" for="inputGroupSelect01">Choose medicine</label>
-                      <select class="form-select" id="medselect">
+                      <select class="form-select" name="Sub-Division" id="medselect">
                         <option value="" selected = "selected">Choose Medicine</option>
-                       
+
                       </select>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Type your message here..." rows="5"></textarea>
+                        <textarea class="form-control" name="Message" id="exampleFormControlTextarea1" placeholder="Type your message here..." rows="5" required></textarea>
                       </div>
-                   
+
                     <div class="col-auto">
                       <button type="submit" class="btn mb-3" style="background-color: #252e6b; color: white;">Send an Enquiry</button>
                     </div>
-                  
-                    
+
+
                   </form>
-        
+
             </div>
-           
+
         </div>
     </div>
 
@@ -162,9 +162,9 @@
          
       </div> -->
   <!-- </div> -->
-  
 
-  
+
+
   <div class="container-fluid  p-2" style="background-color: #252e6b;">
     <marquee width="100%" style="color: white;">Cell Cross is a global pharmaceutical company whose goal is to ensure
       that no patient shall be denied
