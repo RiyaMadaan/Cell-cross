@@ -1,0 +1,19 @@
+version: '2.1'
+orbs:
+  aws-cli: circleci/aws-cli@2.0.6
+
+jobs:
+  update_nonprod_site:
+    executor: aws-cli/default
+    steps:
+      - checkout
+      - aws-cli/setup:
+          profile-name: default
+      - run: aws s3 cp . s3://cellcross-deployment-nonprod/ --recursive
+
+
+workflows:
+  application:
+    jobs:
+      - update_nonprod_site:
+          context: aws
