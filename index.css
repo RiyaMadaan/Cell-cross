@@ -38,6 +38,7 @@
 
   .medcard:hover{
       border: 3px solid #252e6b;
+      padding: 10px;
   }
 
   .enqform{
