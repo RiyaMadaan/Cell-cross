@@ -34,11 +34,15 @@
   .medcard{
       border: none;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
+  }
   .medcard:hover{
       border: 3px solid #252e6b;
-      padding: 10px;
+      /* padding: 10px; */
+  }
+  .card-img-top{
+      object-fit:fill;
+      height: 15vw;
+      width: 100%;
   }
 
   .enqform{
