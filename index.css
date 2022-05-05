@@ -40,8 +40,8 @@
       /* padding: 10px; */
   }
   .card-img-top{
-      /* object-fit:fill; */
-      height: 15vw;
+      object-fit:fill;
+      height: 45vh;
       width: 100%;
   }
 
