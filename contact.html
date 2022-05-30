@@ -154,7 +154,7 @@
       <div class="p-4 mx-lg-5 col-md-5 col-sm-5 order-md-1 my-3 ">
 
         <!-- Form -->
-        <form class="block-decoration-2" id="contactForm">
+        <form action="" class="block-decoration-2" id="contactForm">
 
           <!-- Contact number (hidden) -->
           <input type="hidden" name="contact_number">
@@ -162,34 +162,38 @@
           <!-- Name -->
           <div class="mb-3">
             <label class="visually-hidden" for="user_name">Name</label>
-            <input class="form-control" id="user_name" name="user_name" type="text" placeholder="Name" required="">
+            <input class="form-control" id="user_name" name="user_name"  pattern="[a-zA-Z'-'\s]*" type="text" placeholder="Name" required>
           </div>
 
           <!-- Email -->
           <div class="mb-3">
             <label class="visually-hidden" for="user_email">E-mail address</label>
             <input class="form-control" id="user_email" name="user_email" type="email" placeholder="E-mail address"
-              required="">
+              required>
           </div>
 
           <!-- phone no. -->
           <div class="mb-3">
             <label class="visually-hidden" for="user_name">Phone No.</label>
-            <input class="form-control" id="user_name" name="user_name" max="10" type="number" placeholder="Phone no." required="">
+            <input class="form-control" type="tel" id="phone" name="phone" placeholder="Phone no." maxlength="10" minlength="10">
+
+            <!-- <input class="form-control" id="user_phone" name="user_phone" max="10" type="tel" placeholder="Phone no." required=""> -->
           </div>
 
           <!-- Message -->
           <div class="mb-3">
             <label class="visually-hidden" for="message">Message</label>
             <textarea class="form-control" id="message" name="message" rows="9" placeholder="Message"
-              required=""></textarea>
+              required></textarea>
           </div>
 
           <!-- Button -->
-          <button class="btn" style="border: 1px solid #252e6b; background-color: #252e6b; color: white;" type="submit">
-            <a href="" style="text-decoration: none; color: white;">Send message</a>
+          <button class="btn" style="background-color: #252e6b; color: white;">Send messages</button>
+
+          <!-- <button type="submit" class="btn" style="border: 1px solid #252e6b; background-color: #252e6b; color: white;"> -->
+            <!-- <a href="" style="text-decoration: none; color: white;">Send message</a> -->
             <!-- Send message  -->
-          </button>
+          <!-- </button> -->
 
         </form>
 
