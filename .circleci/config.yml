@@ -11,9 +11,25 @@ jobs:
           profile-name: default
       - run: aws s3 cp . s3://cellcross-deployment-nonprod/ --recursive
 
+  update_prod_site:
+    executor: aws-cli/default
+    steps:
+      - checkout
+      - aws-cli/setup:
+          profile-name: default
+      - run: aws s3 cp . s3://cellcross-deployment-prod/ --recursive
+
 
 workflows:
   application:
     jobs:
       - update_nonprod_site:
           context: aws
+      - prod_approval:
+          type: approval
+          requires:
+            - update_nonprod_site
+      - update_prod_site:
+          context: aws
+          requires:
+            - prod_approval
